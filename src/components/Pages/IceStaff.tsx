@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { EffectsContext } from '../Layout/Effects';
 import './IceStaff.css';
-import IceIcon from '../../assets/Pictures/ice_staff_code.png';
 import ReviveIcon from '../../assets/Pictures/Skull2.png';
+import IceIcon from '../../assets/Pictures/ice_staff_code.png';
 
 const IceStaff = () => {
+  const { showEffects } = useContext(EffectsContext);
+  const sectionClass = showEffects ? 'staff-section ice-glow' : 'staff-section';
+  const iconClass = showEffects ? 'revive-icon-ice' : 'revive-icon';
+
   return (
     <div className="ice-staff">
       <div className="staff-grid">
         <div className="left-column">
-          <section className="staff-section">
-            <h2><img src={ReviveIcon} alt="Revive Icon" className="revive-icon" /> Ice Staff Parts</h2>
+          <section className={sectionClass}>
+            <h2><img src={ReviveIcon} className={iconClass} /> Ice Staff Parts</h2>
             <ul>
               <li>1st Part: Random dig spot while it’s snowing (Starting Room)</li>
               <li>2nd Part: Random dig spot while it’s snowing (Middle Area)</li>
@@ -19,8 +24,8 @@ const IceStaff = () => {
             </ul>
           </section>
 
-          <section className="staff-section">
-            <h2><img src={ReviveIcon} alt="Revive Icon" className="revive-icon" /> Crazy Place & Code</h2>
+          <section className={sectionClass}>
+            <h2><img src={ReviveIcon} className={iconClass} /> Crazy Place & Code</h2>
             <ul>
               <li>Place the Gramophone at the Ice Tunnel (Right of Church, Gen 6)</li>
               <li>Enter The Crazy Place</li>
@@ -31,8 +36,8 @@ const IceStaff = () => {
         </div>
 
         <div className="right-column">
-          <section className="staff-section">
-            <h2><img src={ReviveIcon} alt="Revive Icon" className="revive-icon" /> Ice Staff Upgrade</h2>
+          <section className={sectionClass}>
+            <h2><img src={ReviveIcon} className={iconClass} /> Ice Staff Upgrade</h2>
             <ul>
               <li>Go back to the main map</li>
               <li>Enter the bottom of the Excavation Site</li>

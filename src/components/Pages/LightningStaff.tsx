@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { EffectsContext } from '../Layout/Effects';
 import './LightningStaff.css';
 import ReviveIcon from '../../assets/Pictures/Skull.png';
 import LightningCode from '../../assets/Pictures/lightning_staff_code.png';
 
 const LightningStaff = () => {
+  const { showEffects } = useContext(EffectsContext);
+  const sectionClass = showEffects ? 'staff-section lightning-glow' : 'staff-section';
+  const iconClass = showEffects ? 'revive-icon-lightning' : 'revive-icon';
+
   return (
     <div className="lightning-staff">
       <div className="staff-grid">
         <div className="left-column">
-          <section className="staff-section">
-            <h2><img src={ReviveIcon} alt="Icon" className="revive-icon" /> Lightning Staff Parts</h2>
+          <section className={sectionClass}>
+            <h2><img src={ReviveIcon} className={iconClass} /> Lightning Staff Parts</h2>
             <ul>
               <li>Part 1: On the tank path, near Generator 2 (jump off)</li>
               <li>Part 2: On the tank path, near Generator 3 (jump off)</li>
@@ -19,15 +24,15 @@ const LightningStaff = () => {
             </ul>
           </section>
 
-          <section className="staff-section image-section">
-            <h2><img src={ReviveIcon} alt="Icon" className="revive-icon" /> Piano Code Chart</h2>
+          <section className={`${sectionClass} image-section`}>
+            <h2><img src={ReviveIcon} className={iconClass} /> Piano Code Chart</h2>
             <img src={LightningCode} alt="Lightning Code" className="lightning-code" />
           </section>
         </div>
 
         <div className="right-column">
-          <section className="staff-section">
-            <h2><img src={ReviveIcon} alt="Icon" className="revive-icon" /> Puzzle Notes</h2>
+          <section className={sectionClass}>
+            <h2><img src={ReviveIcon} className={iconClass} /> Puzzle Notes</h2>
             <ul>
               <li>Go through Lightning Tunnel with Gramophone</li>
               <li>Enter Crazy Place and solve the piano note puzzle</li>

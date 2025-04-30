@@ -12,20 +12,22 @@
   color: white;
   font-family: 'Rajdhani', sans-serif;
   overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-/* Animated glowing top line */
-.site-header::before {
+.header-glow::before {
   content: '';
   position: absolute;
   top: 0;
-  left: -50%;
+  left: -100%;
   width: 200%;
   height: 4px;
+  background: linear-gradient(to right, transparent, #6dc2ff, transparent);
+  animation: header-slide-glow 6s linear infinite;
 }
 
-@keyframes move-glow {
-  0% { left: -50%; }
+@keyframes header-slide-glow {
+  0% { left: -100%; }
   100% { left: 100%; }
 }
 
@@ -42,7 +44,8 @@
   margin: 0;
   display: flex;
   gap: 0.5rem;
-  text-shadow: 0 0 6px #6dc2ff, 0 0 12px #ffffff;
+  text-shadow: 0 0 6px #6dc2ff, 0 0 10px #ffffff;
+  transition: text-shadow 0.3s ease-in-out;
 }
 
 .black-text {
@@ -57,4 +60,16 @@
   width: 30px;
   height: 30px;
   margin: 0 8px;
+  transition: filter 0.3s ease;
+}
+
+.pulse {
+  filter: drop-shadow(0 0 3px #ffe657);
+  animation: revive-pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes revive-pulse {
+  0%   { transform: scale(1); filter: drop-shadow(0 0 2px #ffe657); }
+  50%  { transform: scale(1.1); filter: drop-shadow(0 0 6px #ffe657); }
+  100% { transform: scale(1); filter: drop-shadow(0 0 2px #ffe657); }
 }

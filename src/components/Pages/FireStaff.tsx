@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { EffectsContext } from '../Layout/Effects';
 import './FireStaff.css';
-import FireCode from '../../assets/Pictures/fire_staff_code.png';
 import ReviveIcon from '../../assets/Pictures/Skull2.png';
+import FireCode from '../../assets/Pictures/fire_staff_code.png';
 
 const FireStaff = () => {
+  const { showEffects } = useContext(EffectsContext);
+  const sectionClass = showEffects ? 'staff-section fire-glow' : 'staff-section';
+  const iconClass = showEffects ? 'revive-icon-fire' : 'revive-icon';
+
   return (
     <div className="fire-staff">
       <div className="staff-grid">
         <div className="left-column">
-          <section className="staff-section">
-            <h2><img src={ReviveIcon} alt="Revive Icon" className="revive-icon" /> Fire Staff Parts</h2>
+          <section className={sectionClass}>
+            <h2><img src={ReviveIcon} className={iconClass} /> Fire Staff Parts</h2>
             <ul>
               <li>Part 1: Dropped by Panzer at round 8</li>
               <li>Part 2: In the tank path at Church — jump off to reach it</li>
@@ -19,8 +24,8 @@ const FireStaff = () => {
             </ul>
           </section>
 
-          <section className="staff-section">
-            <h2><img src={ReviveIcon} alt="Revive Icon" className="revive-icon" /> Crazy Place Puzzle</h2>
+          <section className={sectionClass}>
+            <h2><img src={ReviveIcon} className={iconClass} /> Crazy Place Puzzle</h2>
             <ul>
               <li>Go through Fire Tunnel with Gramophone</li>
               <li>Place Gramophone on red pedestal and enter the portal</li>
@@ -32,8 +37,8 @@ const FireStaff = () => {
         </div>
 
         <div className="right-column">
-          <section className="staff-section">
-            <h2><img src={ReviveIcon} alt="Revive Icon" className="revive-icon" /> Fire Staff Upgrade</h2>
+          <section className={sectionClass}>
+            <h2><img src={ReviveIcon} className={iconClass} /> Fire Staff Upgrade</h2>
             <ul>
               <li>Fill four fire cauldrons in Agartha with zombie souls</li>
               <li>Return to the Excavation Site</li>

@@ -1,35 +1,33 @@
-/* Element nav bar inside header */
 .nav {
   display: flex;
   align-items: center;
-  gap: 24px;
-  background: none;
-  box-shadow: none;
+  justify-content: center;
+  padding: 0.8rem 0;
 }
 
-/* Nav links container */
 .nav-links {
   display: flex;
   gap: 24px;
-  align-items: center;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* Base nav link */
 .nav-link {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 600;
   color: white;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.25s ease;
+  padding: 6px 12px;
+  border-radius: 8px;
 }
 
-/* Nav icons */
 .nav-link svg {
   font-size: 18px;
   transition: transform 0.2s ease;
@@ -39,28 +37,18 @@
   transform: scale(1.1);
 }
 
-/* Elemental hover themes */
-.nav-link.main:hover {
-  color: #3dbdff;
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
 }
 
-.nav-link.ice:hover {
-  color: #78e8e1;
-}
+/* Themed hovers */
+.nav-link.main:hover { color: #3dbdff; }
+.nav-link.ice:hover { color: #78e8e1; }
+.nav-link.fire:hover { color: #ff7844; }
+.nav-link.wind:hover { color: #ffe657; }
+.nav-link.lightning:hover { color: #d8a8ff; }
 
-.nav-link.fire:hover {
-  color: #ff7844;
-}
-
-.nav-link.wind:hover {
-  color: #ffe657;
-}
-
-.nav-link.lightning:hover {
-  color: #d8a8ff;
-}
-
-/* Optional active state */
 .nav-link.active {
   font-weight: bold;
   color: #ffffff;

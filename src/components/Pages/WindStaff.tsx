@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { EffectsContext } from '../Layout/Effects';
 import './WindStaff.css';
-import WindCode from '../../assets/Pictures/wind_staff_code.png';
 import ReviveIcon from '../../assets/Pictures/Skull2.png';
+import WindCode from '../../assets/Pictures/wind_staff_code.png';
 
 const WindStaff = () => {
+  const { showEffects } = useContext(EffectsContext);
+  const sectionClass = showEffects ? 'staff-section wind-glow' : 'staff-section';
+  const iconClass = showEffects ? 'revive-icon-wind' : 'revive-icon';
+
   return (
     <div className="wind-staff">
       <div className="staff-grid">
         <div className="left-column">
-          <section className="staff-section">
-            <h2><img src={ReviveIcon} alt="Revive Icon" className="revive-icon" /> Wind Staff Parts</h2>
+          <section className={sectionClass}>
+            <h2><img src={ReviveIcon} className={iconClass} /> Wind Staff Parts</h2>
             <ul>
               <li>Part 1: Inside the robot that steps near spawn</li>
               <li>Part 2: Inside the robot that steps middle (excavation)</li>
@@ -19,15 +24,15 @@ const WindStaff = () => {
             </ul>
           </section>
 
-          <section className="staff-section image-section">
-            <h2><img src={ReviveIcon} alt="Revive Icon" className="revive-icon" /> Wind Puzzle Code</h2>
+          <section className={`${sectionClass} image-section`}>
+            <h2><img src={ReviveIcon} className={iconClass} /> Wind Puzzle Code</h2>
             <img src={WindCode} alt="Wind Code Chart" className="wind-code" />
           </section>
         </div>
 
         <div className="right-column">
-          <section className="staff-section">
-            <h2><img src={ReviveIcon} alt="Revive Icon" className="revive-icon" /> Puzzle Notes</h2>
+          <section className={sectionClass}>
+            <h2><img src={ReviveIcon} className={iconClass} /> Puzzle Notes</h2>
             <ul>
               <li>Open the Wind Tunnel with the Gramophone</li>
               <li>Enter the Crazy Place</li>
