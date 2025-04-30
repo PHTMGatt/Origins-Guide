@@ -9,7 +9,8 @@ const Header = () => {
       <div className="title-box">
         <img src={ReviveIcon} alt="Revive Icon" className="revive-header-icon" />
         <h1>
-          Origins Easter Egg <span>Little Lost Girl</span>
+          <span className="black-text">Origins Easter Egg</span>{" "}
+          <span className="white-text">Little Lost Girl</span>
         </h1>
         <img src={ReviveIcon} alt="Revive Icon" className="revive-header-icon" />
       </div>
