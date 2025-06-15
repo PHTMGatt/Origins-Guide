@@ -9,7 +9,7 @@ Try it out on Render:
 
 ## 📸 Screenshot
 
-![App Screenshot](/public/images/ReadMe.png)
+![App Screenshot](/public/images/OriginsReadMe.png)
 
 ## 🔍 What’s Inside
 
