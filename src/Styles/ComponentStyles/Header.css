@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: linear-gradient(to right, #0a4b78, #1c7ed6, #0a4b78);
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.title-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.title-box h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin: 0;
+  display: flex;
+  gap: 0.5rem;
+  text-shadow: 0 0 6px #6dc2ff, 0 0 10px #ffffff;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.black-text {
+  color: black;
+}
+
+.white-text {
+  color: white;
+}
+
+.revive-header-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 8px;
+}
