@@ -3,41 +3,34 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 // Layout
-import Header from "./components/Layout/Header";
-import Nav from "./components/Layout/Nav";
-import Footer from "./components/Layout/Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 // Pages
-import MainGuide from "./components/Pages/MainGuide";
-import FireStaff from "./components/Pages/FireStaff";
-import IceStaff from "./components/Pages/IceStaff";
-import WindStaff from "./components/Pages/WindStaff";
-import LightningStaff from "./components/Pages/LightningStaff";
-
-// Global Toggle Provider
-import EffectsProvider from "./components/Layout/Effects.jsx";
+import MainGuide from "./pages/MainGuide";
+import FireStaff from "./pages/FireStaff";
+import IceStaff from "./pages/IceStaff";
+import WindStaff from "./pages/WindStaff";
+import LightningStaff from "./pages/LightningStaff";
 
 // Global Styles
-import "./global.css";
-import "./global.d.ts";
+import "./styles/global.css";
 
 function App() {
   return (
-    <EffectsProvider>
-      <div className="layout-container">
-        <Header />
-        <main>
-          <Routes>
-            <Route path="/" element={<MainGuide />} />
-            <Route path="/FireStaff" element={<FireStaff />} />
-            <Route path="/IceStaff" element={<IceStaff />} />
-            <Route path="/WindStaff" element={<WindStaff />} />
-            <Route path="/LightningStaff" element={<LightningStaff />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </EffectsProvider>
+    <div className="layout-container">
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<MainGuide />} />
+          <Route path="/FireStaff" element={<FireStaff />} />
+          <Route path="/IceStaff" element={<IceStaff />} />
+          <Route path="/WindStaff" element={<WindStaff />} />
+          <Route path="/LightningStaff" element={<LightningStaff />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
   );
 }
 
