@@ -7,14 +7,14 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 // Pages
-import MainGuide from "./pages/MainGuide";
-import FireStaff from "./pages/FireStaff";
-import IceStaff from "./pages/IceStaff";
-import WindStaff from "./pages/WindStaff";
-import LightningStaff from "./pages/LightningStaff";
+import MainGuide from "./Pages/MainGuide";
+import FireStaff from "./Pages/FireStaff";
+import IceStaff from "./Pages/IceStaff";
+import WindStaff from "./Pages/WindStaff";
+import LightningStaff from "./Pages/LightningStaff";
 
 // Global Styles
-import "./styles/global.css";
+import "./Styles/global.css";
 
 function App() {
   return (
