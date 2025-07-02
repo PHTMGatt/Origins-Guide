@@ -7,7 +7,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 // Pages
-import MainGuide from "./Pages/MainGuide";
+import MainGuide from "./Pages/MainGuideTemp";
 import FireStaff from "./Pages/FireStaff";
 import IceStaff from "./Pages/IceStaff";
 import WindStaff from "./Pages/WindStaff";
