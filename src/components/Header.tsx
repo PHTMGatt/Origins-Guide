@@ -8,7 +8,7 @@ const Header = () => {
     <header className="site-header">
       <div className="title-box">
         <img src={ReviveIcon} alt="Revive Icon" className="revive-header-icon" />
-        <h1>
+        <h1 className="header-title">
           <span className="black-text">Origins Easter Egg</span>{" "}
           <span className="white-text">Little Lost Girl</span>
         </h1>

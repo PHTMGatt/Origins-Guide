@@ -14,7 +14,7 @@ const Nav = () => {
             `nav-link main ${isActive ? "active main-active" : ""}`
           }
         >
-          <GiCrownedSkull /> <span className="main-text">Main Guide</span>
+          <GiCrownedSkull /> <span>Main Guide</span>
         </NavLink>
 
         <NavLink
@@ -23,7 +23,7 @@ const Nav = () => {
             `nav-link ice ${isActive ? "active ice-active" : ""}`
           }
         >
-          <FaRegSnowflake /> Ice Staff
+          <FaRegSnowflake /> <span>Ice Staff</span>
         </NavLink>
 
         <NavLink
@@ -32,7 +32,7 @@ const Nav = () => {
             `nav-link fire ${isActive ? "active fire-active" : ""}`
           }
         >
-          <GiFireTail /> Fire Staff
+          <GiFireTail /> <span>Fire Staff</span>
         </NavLink>
 
         <NavLink
@@ -41,7 +41,7 @@ const Nav = () => {
             `nav-link wind ${isActive ? "active wind-active" : ""}`
           }
         >
-          <GiWhirlwind /> Wind Staff
+          <GiWhirlwind /> <span>Wind Staff</span>
         </NavLink>
 
         <NavLink
@@ -50,7 +50,7 @@ const Nav = () => {
             `nav-link lightning ${isActive ? "active lightning-active" : ""}`
           }
         >
-          <GiLightningHelix /> Lightning Staff
+          <GiLightningHelix /> <span>Lightning Staff</span>
         </NavLink>
       </div>
     </nav>
