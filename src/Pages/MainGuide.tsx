@@ -1,6 +1,6 @@
 import React from "react";
 import SkullIcon from "../assets/images/Skull.png";
-import Audio1 from "../assets/audio/origins_robot.mp3"; //Render testing
+import Audio1 from "../assets/audio/origins_robot.mp3"; //Manual audio import
 import Audio2 from "../assets/audio/zombie_intro.mp3";
 import "../Styles/PageStyles/MainGuide.css";
 
