@@ -1,22 +1,27 @@
-# Origins EE Guide
+# Origins Easter Egg Guide
 
-👻 Welcome to the **Origins EE Guide** — your immersive walkthrough for uncovering every Easter Egg on the Origins Zombies map.
+👻 Welcome to the **Origins EE Guide** — a fully immersive walkthrough for one of the most iconic Zombies maps in Call of Duty: Black Ops III.
 
-## 🚀 Live Demo
+## 🌐 Live Demo
 
-Try it out on Render:  
-[https://your-origins-guide.onrender.com](https://your-origins-guide.onrender.com](https://origins-wtyd.onrender.com))
+Check out the live site here:  
+[Origins Easter Egg Guide on Render](https://origins-wtyd.onrender.com)
 
 ## 📸 Screenshot
 
-![App Screenshot](./src/assets/images/OriginsReadMe.png)
+![Origins Guide Screenshot](./src/assets/images/OriginsReadMe.png)
 
 ## 🔍 What’s Inside
 
-- **Full Origins Map** – Explore every nook and cranny of the classic map.  
-- **Easter Egg Walkthroughs** – Clear, step-by-step guides for all hidden quests.  
-- **Elemental Staff Locations** – Fire, Ice, Wind & Lightning staff build guides.  
+- 🔹 **Complete Main Quest** – Follow the full *Little Lost Girl* Easter Egg, step by step.  
+- 🔹 **Elemental Staff Guides** – Build and upgrade the **Fire**, **Ice**, **Wind**, and **Lightning** staffs.  
+- 🔹 **Clean UI + Themed Layout** – Fully styled with glowing effects, responsive navigation, and lore-friendly design.  
+- 🔹 **Mobile Friendly** – Optimized for all screen sizes, including phones.  
+- 🔹 **Revive Icon Nav System** – Consistent Origins-themed navigation with skull icons and custom React icons.  
 
----
+## 🛠️ Tech Stack
 
-*More features coming soon — stay tuned!*  
+- **React + React Router**  
+- **Custom CSS (no frameworks)**  
+- **Responsive Design**  
+- **React Icons**

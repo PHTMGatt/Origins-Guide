@@ -1,39 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
 
 .site-header {
+  font-family: 'Rajdhani', sans-serif;
+  background: linear-gradient(to right, #0a4b78, #1c7ed6, #0a4b78);
+  color: white;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 1000;
+  width: 100%;
+  padding: 12px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px 20px 12px;
-  background: linear-gradient(to right, #0a4b78, #1c7ed6, #0a4b78);
-  color: white;
-  font-family: 'Rajdhani', sans-serif;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  gap: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .title-box {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   gap: 10px;
-  text-align: center;
-  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.title-box h1 {
-  font-size: 2.6rem;
+.header-title {
+  font-size: 2rem;
   font-weight: 700;
   margin: 0;
+  text-shadow: 0 0 6px #6dc2ff, 0 0 10px #ffffff;
   display: flex;
   flex-wrap: wrap;
+  gap: 0.3rem;
   justify-content: center;
-  gap: 0.4rem;
-  text-shadow: 0 0 6px #6dc2ff, 0 0 12px #ffffff;
+  text-align: center;
 }
 
 .black-text {
@@ -45,38 +45,16 @@
 }
 
 .revive-header-icon {
-  width: 28px;
-  height: 28px;
-  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
 }
 
-/* Tablet */
 @media (max-width: 768px) {
-  .title-box h1 {
-    font-size: 2rem;
+  .header-title {
+    font-size: 1.5rem;
   }
 
   .revive-header-icon {
-    width: 24px;
-    height: 24px;
-  }
-
-  .site-header {
-    padding: 18px 16px 10px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 420px) {
-  .title-box h1 {
-    font-size: 1.6rem;
-    line-height: 1.2;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .revive-header-icon {
-    width: 20px;
-    height: 20px;
+    display: none;
   }
 }
