@@ -1,7 +1,6 @@
 import React from "react";
 import SkullIcon from "../assets/images/Skull.png";
-import Audio1 from "../assets/audio/_forceRefresh.mp3";
-
+import Audio1 from "../assets/audio/origins_robot_fixed.mp3";
 import Audio2 from "../assets/audio/zombie_intro.mp3";
 import "../Styles/PageStyles/MainGuide.css";
 
