@@ -10,6 +10,8 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px 0;
+  max-width: 960px;
+  width: 100%;
 }
 
 .nav-link {
@@ -24,6 +26,7 @@
   border-radius: 6px;
   transition: all 0.2s ease;
   position: relative;
+  text-shadow: 0 0 4px #000;
 }
 
 .nav-link:hover {
@@ -58,37 +61,31 @@
   background: currentColor;
 }
 
-/* Active Color Themes */
-.main-active {
-  color: #6dc2ff;
-}
+/* Theme Colors */
+.main-active { color: #6dc2ff; }
+.ice-active { color: #78e8e1; }
+.fire-active { color: #ff7844; }
+.wind-active { color: #ffe657; }
+.lightning-active { color: #d8a8ff; }
 
-.ice-active {
-  color: #78e8e1;
-}
-
-.fire-active {
-  color: #ff7844;
-}
-
-.wind-active {
-  color: #ffe657;
-}
-
-.lightning-active {
-  color: #d8a8ff;
-}
-
-/* Responsive horizontal nav even on mobile */
-@media (max-width: 768px) {
+/* Tablet */
+@media (max-width: 1024px) {
   .nav-links {
-    gap: 12px;
-    flex-wrap: wrap;
-    padding: 8px;
+    justify-content: center;
+    gap: 16px;
+    padding: 6px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+    gap: 4px;
   }
 
-  .nav-link {
-    font-size: 0.95rem;
-    padding: 5px 10px;
+  .nav-link svg {
+    font-size: 16px;
   }
 }
