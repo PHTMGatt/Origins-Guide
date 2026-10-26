@@ -9,7 +9,7 @@ Check out the live site here:
 
 ## 📸 Screenshot
 
-![Origins Guide Screenshot](./src/assets/images/OriginsReadMe.png)
+![Origins Guide Screenshot](docs/portfolio/cover.webp)
 
 ## 🔍 What’s Inside
 
