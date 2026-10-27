@@ -9,7 +9,7 @@ Check out the live site here:
 
 ## 📸 Screenshot
 
-![Origins Guide Screenshot](./src/assets/images/OriginsReadMe.png)
+![Origins Guide Screenshot](https://raw.githubusercontent.com/PHTMGatt/12-React-Portfolio/main/src/assets/photos/Origins.png)
 
 ## 🔍 What’s Inside
 
